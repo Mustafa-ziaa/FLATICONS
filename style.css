@@ -1,8 +1,17 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #000000; 
     background-image: url(https://img.freepik.com/free-vector/wave-background-abstract-gradient-design_483537-3688.jpg?semt=ais_hybrid);
+ /* Change from width to max-width */
+    height: fit-content;
+    margin: auto;
+}
+.all-content{
+    max-width: 80%;
+    height: fit-content;
+    margin: auto;
 }
 .header {
     position: fixed;
@@ -49,17 +58,17 @@ body {
     flex-wrap: wrap;
     margin-top: 5%;
     display: flex;
+    max-width: 80%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    background-image: url('your-background-image-url.jpg'); /* Replace with your background image */
-    background-size: cover;
-    background-position: center;
 }
 .text-content {
     flex-wrap: wrap;
-    max-width: 600px;
-    margin-left: 10%;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 .text-content h1 {
     font-size: 36px;
@@ -87,9 +96,8 @@ body {
     background-color: #0022ffad; /* Hover color */
 }
 .image-container img {
-    width: 600px; /* Adjust size as needed */
-    height: 400px;
-    margin-right: 10%;
+    width: 500px; /* Adjust size as needed */
+    height: 300px;
 }
 .container {
     margin-left: auto;
@@ -276,6 +284,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .footer-content {
     display: flex;
